@@ -1,0 +1,597 @@
+/**..........................................................................
+ *
+ * DESCRIPTION:
+ * Master style sheet for the SPRIT project.
+ *
+ * ............................................................................
+ *
+ * AUTHORS:
+ * @author Elliott Lee (tenchi@cisco.com)
+ *
+ * ............................................................................
+ *
+ * MODIFICATION HISTORY:
+ * [01 Apr 2002: tenchi] Created this file.
+ *
+ * ............................................................................
+ *
+ * COPYRIGHT:
+ * Copyright (c) 2003-2005, 2007-2008 by Cisco Systems, Inc.
+ * All rights reserved.
+ *
+ *.............................................................................
+ *
+ * NOTES:
+ * Some colors:
+ * - Light blue:      #BBD1ED
+ * - Semi-Light blue: #A0C2D4
+ * - Faded blue:      #5D8CC7
+ * - Deep blue:       #3D127B
+ * - Grays:           #D9D9D9
+ * - Ghosted gray:    #B4B4B4
+ * - Dark gray:       #808080
+ * - Cream:           #F6E8D0
+ * - Peach:           #F5D6A4
+ * - Orange:          #F5B757
+ * - Caramel:         #BA7C1D
+ */
+
+A:hover {
+  color: #00c000;
+  text-decoration: underline;
+}
+
+A:link {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+A:visited {
+  color: #800080;
+  text-decoration: underline;
+}
+
+.asterisk {
+  color: #ff0000;
+  font-family: sans-serif;
+  font-size: 75%;
+  font-weight: normal;
+  vertical-align: super;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.caption {
+  color: #a0a0a0;
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 70%;
+}
+
+.contextNavData {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.contextNavDivider {
+  vertical-align: middle;
+}
+
+.contextNavTitle {
+  color: #808080;
+  font-family: Arial, sans-serif;
+  font-size: 65%;
+  font-weight: bold;
+  letter-spacing: 0em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.dataTableData {
+  color: #000000;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 85%;
+  letter-spacing: 0.0em;
+}
+
+.dataTableDataCenter {
+  color: #000000;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 85%;
+  letter-spacing: 0.0em;
+  text-align: center;
+}
+
+.dataTableDataRed {
+  color: #FF0000;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 85%;
+  letter-spacing: 0.0em;
+}
+
+.dataTableDataRed {
+  color: #ff0000;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 85%;
+  letter-spacing: 0.0em;
+}
+
+.dataTableDataRowDivider {
+  color: #3D127B;
+  font-family: Arial;
+  font-size: 70%;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+}
+
+.dataTableDivider {
+  color: #c0c0c0;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 50%;
+  letter-spacing: 0.0em;
+}
+
+.dataTableTitle {
+  color: #000000;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 8pt;
+}
+
+.dataTableTitleCenter {
+  color: #000000;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 8pt;
+  text-align: center;
+}
+
+.errorInline {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.errorPopupBody {
+  color: #202020;
+}
+
+.errorPopupTitle {
+  color: #c02020;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.footnote {
+  color: #808080;
+  font-family: Arial, sans-serif;
+  font-size: 75%;
+}
+
+.ghosted {
+  color: #a0a0a0;
+}
+
+.headline {
+  color: #5D8CC7;
+  font-family: Arial Black, Arial, sans-serif;
+  font-size: 125%;
+  letter-spacing: -0.05em;
+}
+
+.infoboxData {
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: smaller;
+}
+
+.infoboxTitle {
+  background-color: #BBD1ED;
+  color: #3D127B;
+  font-family: Arial, sans-serif;
+  font-size: smaller;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+}
+
+.infoboxHeader {
+  background-color: "#d9d9d9";
+  color: #3D127B;
+  font-family: Arial, sans-serif;
+  font-size: smaller;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+}
+
+.navCurrentRelease {
+  color: #000000;
+  font-family: Arial Black, sans-serif;
+  font-size: 165%;
+}
+
+.navCurrentReleaseNone {
+  color: #808080;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.navCurrentOSType {
+  color: #000000;
+  font-family: Arial Black, sans-serif;
+  font-size: 165%;
+}
+
+.navCurrentOSTypeNone {
+  color: #808080;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.noData {
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.noRecs {
+  color: #c00000;
+  font-family: serif;
+}
+
+.note {
+  color: #a0a0a0;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.pageFooter {
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 70%;
+  font-weight: normal;
+}
+
+.popupData {
+  background-color: #D9D9D9;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: smaller;
+  text-align: left;
+  vertical-align: top;
+}
+
+.popupTitle {
+  background-color: #808080;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: smaller;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+}
+
+.stepCurrent {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.stepDone {
+  color: #000000;
+  font-size: 90%;
+}
+
+.stepNotDone {
+  color: #d9d9d9;
+  font-size: 90%;
+}
+
+.subHeadline {
+  color: #5D8CC7;
+  font-family: Arial Black, Arial, sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.summaryOK {
+  color: #00a000;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.summaryWarning {
+  color: #ff0000;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.tab {
+  font-family: Arial;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.tabGray {
+  font-family: Arial;
+  font-size: 80%;
+}
+
+.tableCell {
+  border-collapse: collapse;
+  border-top: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+}
+
+.tabLink {
+  color: #ffff00;
+  text-decoration: none;
+}
+
+.tabLink:link {
+  color: #ffff00;
+  text-decoration: none;
+}
+
+.tabLink:visited {
+  color: #ffff00;
+  text-decoration: underline;
+}
+
+.tabLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.tabLinkGray {
+  color: #808080;
+  text-decoration: none;
+}
+
+.tabLinkGray:visited {
+  color: #808080;
+  text-decoration: none;
+}
+
+.tabLinkGray:link {
+  color: #808080;
+  text-decoration: none;
+}
+
+.tabLinkGray:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.tabNavData {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tabNavDivider {
+  vertical-align: middle;
+}
+
+.tabNavLink {
+  text-decoration: none;
+}
+
+.tabNavLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.tabNavLinkActive {
+  color: #ffff00;
+  font-weight: bold;
+}
+
+.tabNavLinkGhosted {
+  color: #B4B4B4;
+  font-style: italic;
+}
+
+.tabNavMiniDivider {
+  color: #A0C2D4;
+}
+
+.tabNavTitle {
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 70%;
+  font-weight: bold;
+  letter-spacing: 0em;
+  line-height: 0.8em;
+}
+
+.viewControlsMini {
+  color: #000000;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 70%;
+  letter-spacing: 0em;
+}
+
+.warningboxData {
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: smaller;
+}
+
+.warningboxTitle {
+  color: #3D127B;
+  font-family: Arial, sans-serif;
+  font-size: smaller;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+}
+
+.warningText {
+  color: #ff0000;
+}
+
+.warningTextSmall {
+  color: #ff0000;
+  font-family: Arial, sans-serif;
+  font-size: 70%;
+  letter-spacing: 0em;
+  line-height: 0.8em;
+}
+
+.warningTextMed {
+  color: #ff0000;
+  font-family: Arial, sans-serif;
+  font-size: 90%;
+  letter-spacing: 0em;
+  line-height: 0.8em;
+}
+
+.warningTextBold {
+  color: #ff0000;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 90%;
+  letter-spacing: 0em;
+  line-height: 0.8em;
+}
+
+.instructionText {
+  color: #3D127B;
+  font-family: Arial, sans-serif;
+  font-size: 70%;
+  letter-spacing: 0em;
+  line-height: 0.8em;
+}
+
+.sectionTitle {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  letter-spacing: 0em;
+  line-height: 0.8em;
+}
+
+.smallBoldText {
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+  font-weight: bold;
+  letter-spacing: 0em;
+  line-height: 0.8em;
+}
+
+.smallText {
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+  letter-spacing: 0em;
+}
+
+.warningDiv {
+	background-color: #fff0d0;
+	margin: 0% 30% 0% 30%;
+	text-align: left;
+	border: .1em solid #ffc000;
+}
+
+.warningDiv span{
+	background-color: #ffc000;
+	padding: 0% 2% 0% 1%;
+	color: #3D127B;
+	font-family: Arial, sans-serif;
+	font-size: smaller;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: -0.01em;
+	margin: 0%;	
+
+}
+
+.warningDiv li{
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: smaller;
+}
+
+.dataTable {
+	border-style: solid;
+	border-color: #3D127B;
+	border-width: 1.25px;
+	border-collapse: collapse;
+}
+
+.dataTable th {
+  border-style: solid;
+  border-color: #BBD1ED;
+  border-width: 1px;
+  background-color: #d9d9d9;
+  color: #000000;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 8pt;	
+}
+
+.dataTable td {
+  border-style: solid;
+  border-color: #BBD1ED;
+  border-width: 1px;  
+  color: #000000;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 85%;
+  letter-spacing: 0.0em;	
+}
+
+.elementInfo {
+	color: #000;
+	font-size: 0.7em;
+}
+
+.errorText {
+	color: #F00;
+}
+
+.warningText {
+	color: #F90;
+}
+
+.successText {
+	color: #3C0;
+}
+
+ul{
+	margin-top: 0.1em;
+	list-style-type: disc;
+} 
+
+.blueBorderDiv {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #bbd1ed;
+}
+
+.pagetitle { 
+	color: #066; 
+	font-weight: bold; 
+	font-size: 17px; 
+	font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular 
+}
+
+
+/* [end] */
