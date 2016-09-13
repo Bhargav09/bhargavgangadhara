@@ -1,11 +1,3 @@
-/**************************************************
-Copyright (c) 2005-2007 by Cisco Systems, Inc.
-
-Created for ED Renumber Sorting
-
-Author: Qingbo Kong (qkong)
-Date  : 06/13/2007
-**************************************************/
 
 CREATE OR REPLACE Package ED_NUM_PKG
 IS
