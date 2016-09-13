@@ -1,12 +1,4 @@
-<!--.........................................................................
-: DESCRIPTION:
-: Test page for testing Hidden releases expiry notification function.
-:
-: AUTHORS:
-: @author Sakthivel Annakam [sannakam@cisco.com]
-:
-: Copyright (c) 2007 Cisco Systems, Inc. All rights reserved.
-:.........................................................................-->
+
 <%@ page import="com.cisco.eit.sprit.logic.ypublish.IOSHiddenPostExpiryNotification"%>
 <%@ page import="java.sql.*"%>
 <%@ page import="com.cisco.eit.sprit.util.*"%>
