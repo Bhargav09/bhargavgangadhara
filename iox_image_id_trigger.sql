@@ -1,5 +1,3 @@
---Copyright (c) 2006 by Cisco Systems, Inc. -kdharmal
-
 CREATE OR REPLACE TRIGGER iox_cco_trig
 BEFORE INSERT ON iox_cco
 FOR EACH ROW
