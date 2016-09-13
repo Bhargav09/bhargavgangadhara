@@ -1,0 +1,21 @@
+--Copyright (c) 2006 by Cisco Systems, Inc. -kdharmal
+
+insert into shr_os_type
+ ( os_type_id, os_type_name, description, 
+   adm_timestamp, adm_userid,adm_flag, adm_comment,created_by,
+   created_date
+ )
+ values
+ (25,'ION Maintenance Pack', 'ION Maintenance Pack', to_date('2006/06/11 12:00:00AM', 
+ 'yyyy/mm/dd hh:mi:ssam') , 'kdharmal', 'V', 'testrda', 'kdharmal', to_date('2006/06/11 12:00:00AM',
+ 'yyyy/mm/dd hh:mi:ssam'))
+
+ insert into shr_os_type
+ ( os_type_id, os_type_name, description, 
+   adm_timestamp, adm_userid,adm_flag, adm_comment,created_by,
+   created_date
+ )
+ values
+ (24,'ION Patch', 'ION Maintenance Pack', to_date('2006/06/11 12:00:00AM', 
+ 'yyyy/mm/dd hh:mi:ssam') , 'kdharmal', 'V', 'testrda', 'kdharmal', to_date('2006/06/11 12:00:00AM',
+ 'yyyy/mm/dd hh:mi:ssam'))
