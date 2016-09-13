@@ -1,0 +1,42 @@
+<xml>
+    <event action="ioxpost">       
+		<handler>com.cisco.eit.sprit.handler.ccopost.ioxpost.IoxCcoPostHandlerImpl</handler>
+    </event>
+     <event action="outage">
+		<handler>com.cisco.eit.sprit.handler.outage.OutageHandlerImpl</handler>
+    </event>   
+    <event action="relpltmdf">
+		<handler>com.cisco.eit.sprit.handler.platformmdf.ReleasePlatformMdfHandlerImpl</handler>
+    </event>
+    <event action="autopublish">
+		<handler>com.cisco.eit.sprit.handler.ccopost.AutoPublishHandlerImpl</handler>
+    </event>
+    <event action="bulkpost">
+		<handler>com.cisco.eit.sprit.handler.ccopost.BulkCcoPostHandlerImpl</handler>
+    </event>
+    <event action="docpublishadmin">
+		<handler>com.cisco.eit.sprit.handler.docpublish.DocPublishAdminHandlerImpl</handler>
+    </event>
+    <event action="copydemnonios">
+        <handler>com.cisco.eit.sprit.handler.dem.CopyDemNonIosHandlerImpl</handler>
+    </event>
+    <event action="imagelist">
+        <handler>com.cisco.eit.sprit.handler.imagelist.ImageListHandlerImpl</handler>
+    </event>
+    <event action="dvdmajormdf">
+        <handler>com.cisco.eit.sprit.handler.dvdmajormdf.DvdMajorRelMdfHandlerImpl</handler>
+    </event>
+    <event action="orderabilityreport">
+        <handler>com.cisco.eit.sprit.handler.orderabilityreport.OrderabilityReportHandlerImpl</handler>
+    </event>
+    <event action="productrelnotes">
+        <handler>com.cisco.eit.sprit.handler.releasenotes.ProductReleaseNotesHandlerImpl</handler>
+    </event>
+    <event action="qotidentify">
+            <handler>com.cisco.eit.sprit.handler.swretirement.SwRetirementIdentifyHandlerImpl</handler>
+    </event>
+    <event action="removeimage">
+            <handler>com.cisco.eit.sprit.logic.ypublish.anonymous.RemoveAnonymousImageHandlerImpl</handler>
+    </event>
+</xml>
+
