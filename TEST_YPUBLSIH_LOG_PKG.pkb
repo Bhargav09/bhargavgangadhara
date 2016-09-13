@@ -1,21 +1,5 @@
 CREATE OR REPLACE PACKAGE BODY TEST_YPUBLSIH_LOG_PKG AS
 
-/* Copyright (c) 2005 by cisco Systems, Inc. All rights reserved. */
-
-/*
-||=================================================================
-|| File: TEST_YPUBLSIH_LOG_PKG.pkb
-||
-|| Author: Nadia Lee
-|| Created: March 2005
-||
-|| Function:
-||   Used to test SHR_YPUBLISH_LOG_PKB. 
-||
-|| Usage: TEST_YPUBLISH_LOG_PKG.main
-||
-||=================================================================
-*/
 
     g_pkg_name      varchar2(100) := 'TEST_YPUBLSIH_LOG_PKG';
     g_newline       varchar2(2)   := CHR(13)||CHR(10);
