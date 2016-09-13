@@ -1,0 +1,27 @@
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<!--
+| Copyright (c) 2003-2005 by Cisco Systems, Inc.
+| All rights reserved.
++-->
+<ejb-jar>
+ <enterprise-beans>
+    <message-driven>
+      <ejb-name>CcoPostMessageDrivenBean</ejb-name>
+      <ejb-class>com.cisco.eit.sprit.logic.ccopostmessage.CcoPostMessageBean</ejb-class>
+      <transaction-type>Container</transaction-type>
+      <message-driven-destination>
+        <destination-type>javax.jms.Queue</destination-type>
+      </message-driven-destination>
+    </message-driven>
+ </enterprise-beans>
+    <assembly-descriptor>
+       <container-transaction>
+           <method>
+              <ejb-name>CcoPostMessageDrivenBean</ejb-name>
+              <method-name>*</method-name>
+            </method>
+            <trans-attribute>Required</trans-attribute>
+       </container-transaction>
+    </assembly-descriptor>
+</ejb-jar>
+

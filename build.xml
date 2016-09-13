@@ -1,0 +1,100 @@
+<!--
+ * SPRIT Build File: exceptions.
+ *
+ * ...........................................................................
+ *
+ * DESCRIPTION: A ANT buildfile.
+ *
+ * AUTHORS:
+ * @author Raju (rruddara@cisco.com)
+ *
+ * ...........................................................................
+ *
+ * All rights reserved.
+-->
+
+
+<!--
+| Copyright (c) 2003, 2004 by Cisco Systems, Inc.
+| All rights reserved.
++-->
+
+
+<project name="SPRIT" default="dist" basedir=".">
+<property file="../../../../../build/sprit.properties"/>
+
+  <target name="init">
+    <property name="beanName" value="ccopostmessage" />
+
+    <!-- Paths -->
+    <property name="dirCompile" value="./compile" />
+    <property name="dirCodeRoot" value="../../../../../.." />
+    <property name="dirAppDeploy" value="../../../../../../WEB-INF/classes" />
+    <property name="dirJarDeploy" value="../../../../../../lib" />
+    <property name="wlsHome" value="${WL_HOME}" />
+    <property name="wlsLib" value="${WL_HOME}/lib" />
+
+    <!-- Status message -->
+    <echo>***</echo>
+    <echo>*** Compiling ${beanName} EJB</echo>
+    <echo>***</echo>
+  </target>
+
+  <!-- .............................................................. -->
+
+  <target name="dist" depends="init,compile,cleanup" description="This is the default target.">
+  </target>
+
+  <!-- .............................................................. -->
+
+  <target name="cleanup">
+    <delete file="temp.jar" />
+    <delete dir="${dirCompile}" />
+    <delete dir="ejbcgen" />
+  </target>
+
+  <!-- .............................................................. -->
+
+  <target name="compile">
+    <!-- Create temp compilation directory -->
+    <mkdir dir="${dirCompile}" />
+    <mkdir dir="${dirCompile}/META-INF" />
+
+    <!-- Compile all classes now -->
+    <javac
+        srcdir="."
+        destdir="${dirCompile}">
+      <include name="*.java" />
+      <classpath>
+        <pathelement path="${dirCodeRoot}" />
+        <pathelement path="${dirAppDeploy}" />
+        <pathelement path="${CP1}:${CP2}:${CP3}:${CP4}:${CP5}:${CP6}:${CP7}" />           
+      </classpath>
+    </javac>
+
+    <!-- Copy over the XMLs -->
+    <copy todir="${dirCompile}/META-INF">
+      <fileset dir=".">
+        <include name="*.xml" />
+      </fileset>
+    </copy>
+
+    <!-- Jar it up -->
+    <jar jarfile="./temp.jar" basedir="${dirCompile}" />
+
+    <!-- EJBC binding -->
+    <java classname="weblogic.ejbc" fork="yes">
+      <sysproperty key="weblogic.home" value="${wlsHome}"/>
+      <arg line="-compiler javac ./temp.jar ./${beanName}.jar"/>
+      <classpath>
+	<pathelement path="${wlsLib}/weblogic.jar" />
+        <pathelement path="../../../../../.." />
+        <pathelement path="../../../../../../WEB-INF/classes" />
+        <pathelement path="${CP1}:${CP2}:${CP3}:${CP4}:${CP5}:${CP6}:${CP7}" />           
+      </classpath>
+    </java>
+
+    <!-- Move the compiled jar! -->
+    <move file="./${beanName}.jar" todir="${dirJarDeploy}" />
+  </target>
+</project>
