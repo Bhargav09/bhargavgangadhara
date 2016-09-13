@@ -1,15 +1,4 @@
-<!--.........................................................................
-: DESCRIPTION:
-: Admin Menu Page: Place to modify the platform, globals, Dram...
-: Excel.
-:
-: AUTHORS:
-: @author Elliott Lee (tenchi@cisco.com)
-: @author Vellachi Palaniappan (vpalani@cisco.com)
-:
-: Copyright (c) 2003-2004, 2006-2010, 2012 by Cisco Systems, Inc.
-: All rights reserved.
-:.........................................................................-->
+
 <%@ page import="java.util.Properties" %>
 <%@ page import="com.cisco.eit.sprit.ui.SpritGUI" %>
 <%@ page import="com.cisco.eit.sprit.gui.Footer" %>
