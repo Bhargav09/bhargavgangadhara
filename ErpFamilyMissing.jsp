@@ -1,5 +1,3 @@
-
-<%@ page import="com.cisco.eit.sprit.util.*" %>
 <html>
 <body>
 <%
