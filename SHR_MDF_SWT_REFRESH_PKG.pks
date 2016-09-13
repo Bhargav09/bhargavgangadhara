@@ -1,41 +1,5 @@
 CREATE OR REPLACE PACKAGE SHR_MDF_SWT_REFRESH_PKG AS
 
-/* Copyright (c) 2006 by cisco Systems, Inc. All rights reserved. */
-
-/*
-||======================================================================
-|| File: SHR_MDF_SWT_REFRESH_PKG.pks
-||
-|| Author: Ashok Advani
-|| Created: June 2006
-||
-|| Business Rules :
-|| ----------------
-|| - Load Data from Cisco.com MDF Software Type Branch
-|| -- Cisco.com Software Type View          : vw_software_type_attr
-|| -- Cisco.com Products have Software Type : vw_prod_has_swtype
-|| -- Cisco.com MDF Connection Details      : e2erepro/composition@authcprd
-|| 
-|| - Data Loading Rules :
-|| ----------------------
-|| -- New Software Types for SPRIT needs to informed to the user
-|| -- Load Software Type in SHR_OS_TYPE, if publishing system is SPRIT.
-|| -- if software type is under IOS branch, then mark Publishing SPRIT-IOS
-|| -- for new Software Type being to be managed by SPRIT, 
-||      email submitted by explaining him the process to go about it.
-|| -- Use the Display column name if it exists, otherwsie use ConceptName by 
-||    removing the SWT characters in the start
-|| -- Mark Software Type 'EOS' if no Cisco Products exists for it.
-|| -- Mark all the IOS Software Type as SPRIT-IOS
-||
-||
-|| NOTE from Shridhar regarding e2e views:
-||   In the rare event of refresh failure on E2E Reporting DB side of it..
-||   and we(e2e) end up with a state where there the underlying views 
-||   are not available. With no data to view, 
-||   SPRIT should avoid truncating entire table. 
-||======================================================================
-*/
     TYPE email_addr_tab_type  is TABLE of varchar2(50);
 
     PROCEDURE main;
