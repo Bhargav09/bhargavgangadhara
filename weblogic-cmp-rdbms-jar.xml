@@ -1,0 +1,63 @@
+<!--
+| Copyright (c) 2003, 2004 by Cisco Systems, Inc.
+| All rights reserved.
++-->
+<!DOCTYPE weblogic-rdbms-bean PUBLIC 
+ '-//BEA Systems, Inc.//DTD WebLogic 5.1.0 EJB RDBMS Persistence//EN'
+ 'http://www.bea.com/servers/wls510/dtd/weblogic-rdbms-persistence.dtd'>
+<weblogic-rdbms-bean>
+<pool-name>shrRdaPool</pool-name>
+<table-name>dem_release_number</table-name>
+  <attribute-map>
+    <object-link>
+      <bean-field>releaseSeqId</bean-field>
+      <dbms-column>rel_seq_id</dbms-column>
+    </object-link>
+    <object-link>
+      <bean-field>release</bean-field>
+      <dbms-column>release</dbms-column>
+    </object-link>    
+    <object-link>
+      <bean-field>maintenance</bean-field>
+      <dbms-column>maintenance</dbms-column>
+    </object-link>
+    <object-link>
+      <bean-field>mrenumber</bean-field>
+      <dbms-column>mrenumber</dbms-column>
+    </object-link>
+    <object-link>
+      <bean-field>eddesignator</bean-field>
+      <dbms-column>ed_designator</dbms-column>
+    </object-link>
+    <object-link>
+      <bean-field>edrenumber</bean-field>
+      <dbms-column>ed_renumber</dbms-column>
+    </object-link>
+   </attribute-map>
+  <finder-list>
+	<finder>  
+	  <method-name>findAllRelease</method-name>
+  	  <method-params>	
+	  </method-params>
+	  <finder-query><![CDATA[(orderBy 'release desc, maintenance desc, mrenumber desc, ed_designator desc, ed_renumber desc' (= 1 1))]]></finder-query>
+	</finder>	  
+	<finder>  
+	  <method-name>findByReleaseEddesignator</method-name>
+  	   <method-params>	
+	      	 <method-param>java.lang.String</method-param>
+	       	 <method-param>java.lang.String</method-param>
+	   </method-params>
+  	   <finder-query><![CDATA[(& (= release $0) (= eddesignator $1))]]></finder-query>	
+	</finder>	
+	<finder>  
+	  <method-name>findByRelease</method-name>
+  	   <method-params>	
+	      	 <method-param>java.lang.String</method-param>
+	   </method-params>
+  	   <finder-query><![CDATA[(& (= release $0) (isNull eddesignator))]]></finder-query>	
+	</finder>	  
+	  
+  </finder-list>
+  <options>
+  </options>
+ </weblogic-rdbms-bean>
