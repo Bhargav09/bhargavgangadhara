@@ -1,14 +1,4 @@
-<!--
-.........................................................................
-: DESCRIPTION:
-: Web service tesing page
-:
-: 
-: AUTHORS:
-: @modified by Holly Chen (holchen@cisco.com)
-: Add stagin endpoint and operations under "CHANGE ONLY THIS SECTION"
-: Copyright (c) 2007-2008, 2010, 2012 by Cisco Systems, Inc.
-:.........................................................................
+
 -->
 <%@ page import="org.apache.axis.client.Call" %>
 <%@ page import="org.apache.axis.client.Service" %>
