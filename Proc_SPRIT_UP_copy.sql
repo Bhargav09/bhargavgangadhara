@@ -1,14 +1,4 @@
-/************************************************************************************
-   This procedure is created to perform copy of ImageList,UpgradePlanner and Market Matrix;
-   Auther:Selvaraj Aran(aselvara)
-
-   LastUpdateddate:August 24,2010
-   Modification History:
-        Added eGenie changes that Parent PIDs,platform manager id and Release PM Id to be provided to 
-        eGenie system along with other data
-    
-    Copyright (c) 2007-2010 by Cisco Systems, Inc.
-****************************************************************************************/      
+     
 CREATE OR REPLACE PROCEDURE SHR_RDA.PROC_SPRIT_UP_MM_COPY
 /* 12/04/2003	  Sat Pande		Modified to insert into the Market Matrix tables (shr_release_pcode_group and shr_pcode) */
    ( p_RELEASE                IN    VARCHAR2
