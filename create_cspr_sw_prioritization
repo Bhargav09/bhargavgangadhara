@@ -1,0 +1,106 @@
+--Prioritization workflow 
+CREATE TABLE SPRIT.CSPR_SW_PRIORITIZATION
+(
+  PRIORITY_ID           NUMBER                  NOT NULL,
+  OS_TYPE_ID            NUMBER                  NOT NULL,
+  STATUS                VARCHAR2(50 BYTE)       NOT NULL,
+  REQUESTOR_ID          VARCHAR2(8 BYTE)        NOT NULL,
+  APPROVER_ID           VARCHAR2(8 BYTE),
+  REQUEST_DESCRIPTION   VARCHAR2(1000 BYTE),
+  REQUESTED_DATE        DATE,
+  APPROVER_COMMENTS     VARCHAR2(1000 BYTE),
+  APPROVAL_REJECT_DATE  DATE,
+  CREATED_BY            VARCHAR2(8 BYTE)        NOT NULL,
+  CREATED_DATE          DATE                    NOT NULL,
+  ADM_USERID            VARCHAR2(8 BYTE)        NOT NULL,
+  ADM_TIMESTAMP         DATE                    NOT NULL,
+  ADM_FLAG              CHAR(1 BYTE)            NOT NULL,
+  ADM_COMMENT           VARCHAR2(50 BYTE)
+)
+TABLESPACE DATA
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          1M
+            NEXT             1M
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
+
+
+CREATE UNIQUE INDEX SPRIT.CSPR_SW_PRIORITIZATION_PK ON SPRIT.CSPR_SW_PRIORITIZATION
+(PRIORITY_ID)
+LOGGING
+TABLESPACE DATA
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          1M
+            NEXT             1M
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+NOPARALLEL;
+
+
+DROP SYNONYM SHR_RDA.CSPR_SW_PRIORITIZATION;
+
+CREATE SYNONYM SHR_RDA.CSPR_SW_PRIORITIZATION FOR SPRIT.CSPR_SW_PRIORITIZATION;
+
+
+ALTER TABLE SPRIT.CSPR_SW_PRIORITIZATION ADD (
+  CONSTRAINT CSPR_SW_PRIORITIZATION_PK
+ PRIMARY KEY
+ (PRIORITY_ID)
+    USING INDEX 
+    TABLESPACE DATA
+    PCTFREE    10
+    INITRANS   2
+    MAXTRANS   255
+    STORAGE    (
+                INITIAL          1M
+                NEXT             1M
+                MINEXTENTS       1
+                MAXEXTENTS       UNLIMITED
+                PCTINCREASE      0
+               ));
+
+GRANT ALTER, DELETE, INDEX, INSERT, REFERENCES, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK ON SPRIT.CSPR_SW_PRIORITIZATION TO SHR_RDA;
+
+
+
+CREATE SEQUENCE SPRIT.CSPR_SW_PRIORITIZATION_SEQ
+  START WITH 345
+  MAXVALUE 999999999999999999999999999
+  MINVALUE 1
+  NOCYCLE
+  NOCACHE
+  NOORDER;
+  
+  
+ 
+
+Grant all on  cspr_sw_prioritization       	  to   shr_rda;
+
+Grant all on  cspr_sw_prioritization_seq      to   shr_rda;
+ 
+
+create or replace synonym  cspr_sw_prioritization          	 for sprit.cspr_sw_prioritization;
+
+create or replace synonym  cspr_sw_prioritization_seq    	 for sprit.cspr_sw_prioritization_seq;
+
+
+
+

@@ -1,0 +1,4 @@
+-- Copyright (c) 2007 by Cisco Systems, Inc.
+
+ALTER TABLE ION_PATCH
+ADD IMAGE_SOURCE_LOCATION VARCHAR2(250);
