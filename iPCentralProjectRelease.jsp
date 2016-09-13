@@ -1,15 +1,3 @@
-<!--.........................................................................
-: DESCRIPTION:
-: Testing IPcentral project release service
-:
-: AUTHORS:
-: @author Selvaraj Aran (aselvara@cisco.com)
-:
-: Copyright (c) 2003-2008, 2010 by Cisco Systems, Inc.^
-: All rights reserved.
-:.........................................................................-->
-
-
 <%@ page import="org.apache.axis.client.Call" %>
 <%@ page import="org.apache.axis.client.Service" %>
 <%@ page import="org.apache.axis.encoding.XMLType" %>
