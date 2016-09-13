@@ -1,33 +1,31 @@
-package com.example.androidservice;
+package com.javatpoint.jsonparsing;
 
-import android.os.Bundle;
+import org.json.JSONException;
+import org.json.JSONObject;
 import android.app.Activity;
-import android.content.Intent;
-import android.view.Menu;
-import android.view.View;
+import android.os.Bundle;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
+public static final String JSON_STRING="{\"employee\":{\"name\":\"Sachin\",\"salary\":56000}}";
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-	}
+@Override
+public void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_main);
 
-	// Start the service
-	public void startService(View view) {
-		startService(new Intent(this, MyService.class));
-	}
+TextView textView1=(TextView)findViewById(R.id.textView1);
 
-	// Stop the service
-	public void stopService(View view) {
-		stopService(new Intent(this, MyService.class));
-	}
+try{
+JSONObject emp=(new JSONObject(JSON_STRING)).getJSONObject("employee");
+String empname=emp.getString("name");
+int empsalary=emp.getInt("salary");
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
+String str="Employee Name:"+empname+"\n"+"Employee Salary:"+empsalary;
+textView1.setText(str);
 
-		getMenuInflater().inflate(R.menu.activity_main, menu);
-		return true;
-	}
+}catch (Exception e) {e.printStackTrace();}
+
+}
+
 }
