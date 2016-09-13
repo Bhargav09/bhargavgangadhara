@@ -1,10 +1,3 @@
-/*******************************************************************
--- Copyright (c) 2006-2007 by cisco Systems, Inc. All rights reserved.
--- This sql script is created for CSCsi25260 sprit Enhance Product code orderable report performance
--- Created by :   Selvaraj Aran(aselvara@cisco.com)
--- Created on:    April 5 2007
-*******************************************************************/
-
 CREATE INDEX IDX_REL_ORDERABLE_REPORT
 ON RELEASE_ORDERABLE_REPORT(RELEASE_NUMBER);
 
