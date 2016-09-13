@@ -1,10 +1,3 @@
---Copyright (c) 2008 by Cisco Systems, Inc.
-/*
- 	Current Release - Sprit 7.2 
- 	Last updated by - holchen
- 	Last updated date - June 25, 2008 
- */
- 
  DROP TABLE CSPR_IS_VALID_FILE_FORMAT;
  
  DROP SEQUENCE CSPR_IS_VALID_FILE_FORMAT_SEQ;
