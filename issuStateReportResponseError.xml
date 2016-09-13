@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright (c) 2006-2007 by Cisco Systems, Inc. All rights reserved. -->
+
+<SPRITResponse version="1.0">
+	<ClientName>ISSU</ClientName>
+	<ClientRequestId>125</ClientRequestId>
+	<Action>IssuStateReport</Action>
+	<Response>
+		<ResponseCode>12002</ResponseCode>
+		<ResponseType>Error</ResponseType>
+		<ResponseDescription>No such image exists in SPRIT.</ResponseDescription>
+		<ResponseComments>Invalid image. c18k08-mai-xx</ResponseComments>
+		<Timestamp>2001-12-17T09:30:47.0Z</Timestamp>
+		<UpdatedBy>SPRIT</UpdatedBy>
+	</Response>
+	<SpritInternal>
+		<SpritRequestId>28791</SpritRequestId>
+	</SpritInternal>
+</SPRITResponse>

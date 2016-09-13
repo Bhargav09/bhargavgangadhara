@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Selvaraj Aran (Cisco Systems) -->
+<!-- Copyright (c) 2006-2010 by Cisco Systems, Inc. All rights reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="Action" fixed="IPCentralProjectRelease" nillable="false">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="30"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ClientName" fixed="IPCENTRAL" nillable="false">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="20"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ClientRequestId" nillable="false">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="IPCentralProjectID">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="FromDate">
+		<xs:simpleType>
+			<xs:restriction base="xs:dateTime"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ToDate">
+		<xs:simpleType>
+			<xs:restriction base="xs:dateTime"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="RequesterUserId">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="8"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Start" nillable="false">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Limit" nillable="false">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="SPRITReleaseRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ClientName"/>
+				<xs:element ref="ClientRequestId"/>
+				<xs:element ref="Action"/>
+				<xs:element ref="IPCentralProjectID" minOccurs="0"/>
+				<xs:element ref="FromDate"/>
+				<xs:element ref="ToDate" minOccurs="0"/>
+				<xs:element ref="RequesterUserId"/>
+				<xs:element ref="Start"/>
+				<xs:element ref="Limit"/>
+			</xs:sequence>
+			<xs:attribute name="version" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="1.0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>	
+
+</xs:schema>

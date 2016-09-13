@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SPRITResponse version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234</ClientRequestId>
+  <Response>
+    <ResponseCode>10000</ResponseCode>
+    <ResponseType>Error</ResponseType>
+    <ResponseDescription>Image not found</ResponseDescription>
+    <ResponseComments>Image c23 is not having MinRam </ResponseComments>
+    <Timestamp>Date and Time</Timestamp>
+    <UpdatedBy>SPRIT</UpdatedBy>
+  </Response>
+  <SpritInternal>
+    <SpritRequestId>2345</SpritRequestId>
+  </SpritInternal>
+</SPRITResponse>

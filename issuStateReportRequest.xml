@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ 
+<!-- Copyright (c) 2006-2007 by cisco Systems, Inc. All rights reserved. -->
+
+<SpritRequest>
+	<ClientName>ISSU</ClientName>
+	<ClientRequestId>1</ClientRequestId>
+	<Action>IssuStateReport</Action>
+	<Release ReleaseNumber="12.2(28)SB">
+		<ImageName>c10k2-p11-mz</ImageName>
+		<ImageName>c10k3-p11-mz</ImageName>
+	</Release>
+</SpritRequest>

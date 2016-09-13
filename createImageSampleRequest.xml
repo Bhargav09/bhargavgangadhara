@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<SpritRequest version="1.0"> 
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234</ClientRequestId>
+  <Action>CreateImageInSprit</Action>
+  <SoftwareType>Cisco Network Assistant</SoftwareType>
+  <Image>
+    <Release>
+      <ReleaseNumber>1.0(1a)</ReleaseNumber>
+      <MajorRelease>1 </MajorRelease>
+      <MaintenanceRelease>1a</MaintenanceRelease>
+      <MinorRelease>0</MinorRelease>
+    </Release>
+    <ImageName>cna-1_0-windows-k9-installer.1-0-1a.exe</ImageName>
+    <ImageDescription>Network Assistant 1.0(1a)</ImageDescription>
+    <MDF>
+      <MDFId>37501232</MDFId>
+      <MDFId>37511234</MDFId>
+      <MDFId>37521123 </MDFId>
+    </MDF>
+    <MemoryFootPrint>0</MemoryFootPrint>
+    <HardDiskFootPrint>1 </HardDiskFootPrint>
+    <Crypto>No</Crypto>
+    <ReleaseDocURL></ReleaseDocURL>
+    <PostingTypeName>CCO Only</PostingTypeName>
+    <InstallationDocURL></InstallationDocURL>
+    <ProductCode>12.1 </ProductCode>
+    <IsSoftwareAdvisory>N</IsSoftwareAdvisory>
+    <SoftwareAdvisoryDocURL></SoftwareAdvisoryDocURL>
+    <IsDeferred>N</IsDeferred>
+    <DeferralAdvisoryDocURL></DeferralAdvisoryDocURL>
+    <CdcAccessLevelName>Guest Registered</CdcAccessLevelName>
+    <SourceLocation>/auto/swc-lan/crypto/3DES/cna/archive/</SourceLocation>
+    <MachineOsType>
+      <Name>Windows</Name>
+      <Name>Solaris</Name>
+    </MachineOsType>
+    <RelatedSoftware>N</RelatedSoftware>
+    <PublisherUserId>prussel</PublisherUserId>
+  </Image>
+</SpritRequest>
