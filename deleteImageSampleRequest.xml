@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234</ClientRequestId>
+  <Action>DeleteImageInSprit</Action>
+  <Image>
+   <ImageId>64536</ImageId>
+   <PublisherUserId>prussel</PublisherUserId>
+  </Image>
+</SpritRequest>
+

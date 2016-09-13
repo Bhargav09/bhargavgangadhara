@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SPRITReleaseResponse version="1.0">
+<ClientName>IPCENTRAL</ClientName>
+<ClientRequestId>145</ClientRequestId>
+<Action>IPCentralProjectRelease</Action>
+<ReleaseResponse>
+<ResponseCode>11000</ResponseCode>
+<ResponseType>Info</ResponseType>
+<ResponseDescription>Successful transaction processing has occurred in SPRIT.</ResponseDescription>
+<ResponseComments>IPCentralProjectReleaseRequest processed in SPRIT</ResponseComments>
+<Timestamp>2010-07-06T17:20:12Z</Timestamp>
+<UpdatedBy>SPRIT</UpdatedBy>
+<Data>
+<Start>0</Start>
+<Limit>2</Limit>
+<TotalCount>50</TotalCount>
+<PageCount>2</PageCount>
+<Release>
+<ReleaseNumberId>134</ReleaseNumberId>
+<ReleaseNumber>12.0(7)T1</ReleaseNumber>
+<IPCentralProjectID>ipcentralprojectid</IPCentralProjectID>
+<OSTypeID>1</OSTypeID>
+<MDFSoftwareTypeID>280805680</MDFSoftwareTypeID>
+<SoftwareTypeName>IOS Software</SoftwareTypeName>
+<CCOFCSDate>2010-07-06</CCOFCSDate>
+<AdmFlag>V</AdmFlag>
+<CreatedBy>null</CreatedBy>
+<LastUpdatedDate>2001-12-21</LastUpdatedDate>
+</Release>
+<Release>
+<ReleaseNumberId>165</ReleaseNumberId>
+<ReleaseNumber>12.1(5)</ReleaseNumber>
+<IPCentralProjectID>ipcentralprojectid</IPCentralProjectID>
+<OSTypeID>1</OSTypeID>
+<MDFSoftwareTypeID>280805680</MDFSoftwareTypeID>
+<SoftwareTypeName>IOS Software</SoftwareTypeName>
+<CCOFCSDate>2010-07-06</CCOFCSDate>
+<AdmFlag>V</AdmFlag>
+<CreatedBy>null</CreatedBy>
+<LastUpdatedDate>2002-01-30</LastUpdatedDate>
+</Release>
+</Data>
+</ReleaseResponse>
+<SpritInternal>
+<SpritRequestId>6979</SpritRequestId>
+</SpritInternal>
+</SPRITReleaseResponse>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) 2006-2008 by Cisco Systems, Inc. All rights reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="Action">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="CreateImageInSprit"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="CdcAccessLevelName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ClientName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="250"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ClientRequestId">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="DeferralAdvisoryDocURL">
+		<xs:simpleType>
+			<xs:restriction base="xs:anyURI"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="HardDiskFootPrint">
+		<xs:simpleType>
+			<xs:restriction base="xs:unsignedLong"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Image">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ReleaseVersion"/>
+				<xs:element ref="CCOFCSDate" minOccurs="0"/>
+				<xs:element ref="ImageName"/>
+				<xs:element ref="ImageDescription" minOccurs="0"/>
+				<xs:element ref="MDF" minOccurs="0"/>
+				<xs:element ref="MemoryFootPrint" minOccurs="0"/>
+				<xs:element ref="HardDiskFootPrint" minOccurs="0"/>
+				<xs:element ref="Crypto" minOccurs="0"/>
+				<xs:element ref="ReleaseDocURL" minOccurs="0"/>
+				<xs:element ref="PostingTypeName" minOccurs="0"/>
+				<xs:element ref="InstallationDocURL" minOccurs="0"/>
+				<xs:element ref="ProductCode" minOccurs="0"/>
+				<xs:element ref="IsSoftwareAdvisory"/>
+				<xs:element ref="SoftwareAdvisoryDocURL" minOccurs="0"/>
+				<xs:element ref="IsDeferred"/>
+				<xs:element ref="DeferralAdvisoryDocURL" minOccurs="0"/>
+				<xs:element ref="CdcAccessLevelName" minOccurs="0"/>
+				<xs:element ref="SourceLocation"/>
+				<xs:element ref="MachineOsType" minOccurs="0"/>
+				<xs:element ref="RelatedSoftware"/>
+				<xs:element ref="ImageDocuments" minOccurs="0"/>
+				<xs:element ref="PublisherUserId"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ImageDescription">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="240"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ImageName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="64"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="InstallationDocURL">
+		<xs:simpleType>
+			<xs:restriction base="xs:anyURI"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Crypto">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="5"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="IsDeferred">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="N"/>
+				<xs:enumeration value="Y"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="IsSoftwareAdvisory">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="N"/>
+				<xs:enumeration value="Y"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="MDF">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MDFId" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MDFId">
+		<xs:simpleType>
+			<xs:restriction base="xs:unsignedInt"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="MachineOsType">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Name" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MemoryFootPrint">
+		<xs:simpleType>
+			<xs:restriction base="xs:unsignedLong"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="MinorRelease">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="20"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Name">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="PostingTypeName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ProductCode">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="18"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="PublisherUserId">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="8"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="RelatedSoftware">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="N"/>
+				<xs:enumeration value="Y"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ImageDocuments">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ImageDocument" minOccurs="0" maxOccurs="3"/>
+				</xs:sequence>
+		</xs:complexType>	
+	</xs:element>
+	<xs:element name="ImageDocument">
+		<xs:complexType>
+			<xs:sequence>
+			    	<xs:element ref="ImageLabel"/>
+			    	<xs:choice>
+				    <xs:element ref="ImageURL"/>
+				    <xs:element ref="ImageDocSourceLocation"/>
+			        </xs:choice>	
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ImageLabel">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="60"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ImageURL">
+		<xs:simpleType>
+			<xs:restriction base="xs:anyURI">
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ImageDocSourceLocation">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseVersion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ReleaseComponents" minOccurs="0"/>
+				<xs:element ref="ReleaseMessage" minOccurs="0" />
+				<xs:element ref="ReleaseDocuments" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="version" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ReleaseComponents">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ReleaseComponent" minOccurs="0" maxOccurs="8"/>
+			</xs:sequence>
+		</xs:complexType>	
+	</xs:element>
+	<xs:element name="ReleaseComponent">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ComponentName"/>
+				<xs:element ref="ComponentValue"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ComponentName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="25"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ComponentValue">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="20"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseDocuments">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ReleaseDocument" minOccurs="0" maxOccurs="3"/>
+				</xs:sequence>
+		</xs:complexType>	
+	</xs:element>
+	<xs:element name="ReleaseDocument">
+		<xs:complexType>
+			<xs:sequence>
+			      	<xs:element ref="ReleaseLabel"/>
+			      	<xs:choice>
+				    <xs:element ref="ReleaseURL"/>
+				    <xs:element ref="ReleaseDocSourceLocation"/>
+				</xs:choice>    
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ReleaseLabel">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="60"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseURL">
+		<xs:simpleType>
+			<xs:restriction base="xs:anyURI">
+				 <xs:minLength value="1" /> 
+			</xs:restriction>		 
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseDocSourceLocation">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="1000"/>
+				</xs:restriction>
+			</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseMessage">
+			<xs:simpleType>
+				<xs:annotation>
+				  <xs:documentation>[CDATA]element</xs:documentation> 
+				 </xs:annotation>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="350"/>
+				</xs:restriction>
+			</xs:simpleType>
+	</xs:element>
+	<xs:element name="CCOFCSDate">
+		<xs:simpleType>
+			<xs:restriction base="xs:dateTime"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseDocURL">
+		<xs:simpleType>
+			<xs:restriction base="xs:anyURI"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseNumber">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="20"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="SoftwareAdvisoryDocURL">
+		<xs:simpleType>
+			<xs:restriction base="xs:anyURI"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="SoftwareType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="SourceLocation">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="SpritRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ClientName"/>
+				<xs:element ref="ClientRequestId"/>
+				<xs:element ref="Action"/>
+				<xs:element ref="SoftwareType"/>
+				<xs:element ref="Image"/>
+			</xs:sequence>
+			<xs:attribute name="version" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="1.0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

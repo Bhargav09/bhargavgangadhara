@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) 2006-2007 by Cisco Systems, Inc. All rights reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="Action">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="CCORepostImage"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ClientName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ClientRequestId">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Image">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ImageId"/>
+				<xs:element ref="PublisherUserId"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ImageId">
+		<xs:simpleType>
+			<xs:restriction base="xs:unsignedInt"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="PublisherUserId">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="16"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseNews">
+		<xs:simpleType>
+			<xs:annotation>
+				 <xs:documentation>[CDATA]element</xs:documentation> 
+			</xs:annotation>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="4000"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>	
+	<xs:element name="SpritRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ClientName"/>
+				<xs:element ref="ClientRequestId"/>
+				<xs:element ref="Action"/>
+				<xs:element ref="Image"/>
+				<xs:element ref="ReleaseNews" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="version" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="1.0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

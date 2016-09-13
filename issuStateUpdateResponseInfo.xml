@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright (c) 2006-2007 by Cisco Systems, Inc. All rights reserved. -->
+
+<SPRITResponse version="1.0">
+	<ClientName>ISSU</ClientName>
+	<ClientRequestId>1</ClientRequestId>
+	<Action>IssuStateUpdate</Action>
+	<Response>
+		<ResponseCode>0</ResponseCode>
+		<ResponseType>Info</ResponseType>
+		<ResponseDescription>Request is successfully processed in SPRIT.</ResponseDescription>
+		<ResponseComments></ResponseComments>
+		<Timestamp>2001-12-17T09:30:47.0Z</Timestamp>
+		<UpdatedBy>SPRIT</UpdatedBy>
+	</Response>
+	<SpritInternal>
+		<SpritRequestId>2004</SpritRequestId>
+	</SpritInternal>
+</SPRITResponse>

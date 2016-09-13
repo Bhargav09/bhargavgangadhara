@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234</ClientRequestId>
+  <Action>RequestStatus</Action>
+  <StatusRequestId>1345</StatusRequestId>
+</SpritRequest>
+

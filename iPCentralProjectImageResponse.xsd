@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Selvaraj Aran (Cisco Systems) -->
+<!-- Copyright (c) 2006-2010 by Cisco Systems, Inc. All rights reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="Action">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="IPCentralProjectImage"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ClientName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="250"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ClientRequestId">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="RequesterUserId">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="8"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseNumberID">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ReleaseNumber">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="20"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="IPCentralProjectID">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="OSTypeID" type="xs:unsignedInt"/>
+	<xs:element name="MDFSoftwareTypeID" type="xs:unsignedInt"/>
+	<xs:element name="SoftwareTypeName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ImageId" type="xs:unsignedInt"/>
+	<xs:element name="ImageName" type="xs:string"/>
+	<xs:element name="ImageDescription" type="xs:string"/>
+	<xs:element name="MD5Cheksum" type="xs:string"/>
+	<xs:element name="CCOPostStatus">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="CCOPostedDated">
+		<xs:simpleType>
+			<xs:restriction base="xs:date"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="AdmFlag">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="CreatedBy">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="CreatedDate">
+		<xs:simpleType>
+			<xs:restriction base="xs:date"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="LastUpdatedDate">
+		<xs:simpleType>
+			<xs:restriction base="xs:date"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ImageResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ResponseCode" nillable="false">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ResponseType" default="Info" nillable="false">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="32"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ResponseDescription" default="Request is successfully processed in SPRIT." nillable="false">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ResponseComments" nillable="false">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Timestamp" type="xs:dateTime" nillable="false"/>
+				<xs:element name="UpdatedBy" fixed="SPRIT" nillable="false">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="8"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Data" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Start"/>
+							<xs:element ref="Limit"/>
+							<xs:element ref="TotalCount"/>
+							<xs:element ref="PageCount"/>
+							<xs:element name="Release" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="ReleaseNumberID"/>
+										<xs:element ref="ReleaseNumber"/>
+										<xs:element ref="IPCentralProjectID" minOccurs="0"/>
+										<xs:element ref="OSTypeID"/>
+										<xs:element ref="MDFSoftwareTypeID"/>
+										<xs:element ref="SoftwareTypeName"/>
+										<xs:element name="Image" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element ref="ImageId"/>
+													<xs:element ref="ImageName"/>
+													<xs:element ref="ImageDescription" minOccurs="0"/>
+													<xs:element ref="MD5Cheksum" minOccurs="0"/>
+													<xs:element ref="CCOPostStatus" minOccurs="0"/>
+													<xs:element ref="CCOPostedDated" minOccurs="0"/>
+													<xs:element ref="AdmFlag"/>
+													<xs:element ref="CreatedBy"/>
+													<xs:element ref="CreatedDate"/>
+													<xs:element ref="LastUpdatedDate"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SpritInternal">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="SpritRequestId" default="1" nillable="false">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Start">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Limit">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="TotalCount">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="PageCount">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="SPRITImageResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ClientName"/>
+				<xs:element ref="ClientRequestId"/>
+				<xs:element ref="Action"/>
+				<xs:element ref="ImageResponse"/>
+				<xs:element ref="SpritInternal"/>
+			</xs:sequence>
+			<xs:attribute name="version" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="1.0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

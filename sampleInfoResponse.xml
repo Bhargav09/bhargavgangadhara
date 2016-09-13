@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SPRITResponse version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234</ClientRequestId>
+  <Response>
+    <ResponseCode>10100</ResponseCode>
+    <ResponseType>Info</ResponseType>
+    <ResponseDescription>YpublishAccepted</ResponseDescription>
+    <ResponseComments> </ResponseComments>
+    <Timestamp>Date and Time</Timestamp>
+    <UpdatedBy>YPUBLISH</UpdatedBy>
+  </Response>
+  <SpritInternal>
+    <SpritRequestId>2345</SpritRequestId>
+  </SpritInternal>
+</SPRITResponse>

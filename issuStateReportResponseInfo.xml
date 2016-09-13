@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright (c) 2006-2007 by Cisco Systems, Inc. All rights reserved. -->
+
+<SPRITResponse version="1.0">
+	<ClientName>ISSU</ClientName>
+	<ClientRequestId>125</ClientRequestId>
+	<Action>IssuStateReport</Action>
+	<Response>
+		<ResponseCode>0</ResponseCode>
+		<ResponseType>Info</ResponseType>
+		<ResponseDescription>Request is successfully processed in SPRIT.</ResponseDescription>
+		<ResponseComments></ResponseComments>
+		<Timestamp>2001-12-17T09:30:47.0Z</Timestamp>
+		<UpdatedBy>SPRIT</UpdatedBy>
+	</Response>
+	<SpritInternal>
+		<SpritRequestId>28791</SpritRequestId>
+	</SpritInternal>
+	<Release ReleaseNumber="12.2(28)SB">
+		<Image>
+			<ImageName>c10k2-p11-mz</ImageName>
+			<IssuState>GEN</IssuState>
+			<CreatedAt>2001-12-17T09:30:47.0Z</CreatedAt>
+			<CreatedBy>sclark</CreatedBy>
+			<LastUpdatedAt>2001-12-17T09:30:47.0Z</LastUpdatedAt>
+			<LastUpdatedBy>sjoe</LastUpdatedBy>
+		</Image>
+		<Image>
+			<ImageName>c10k3-p11-mz</ImageName>
+			<IssuState>VER</IssuState>
+			<CreatedAt>2001-12-17T09:30:47.0Z</CreatedAt>
+			<CreatedBy>smith</CreatedBy>
+			<LastUpdatedAt>2001-12-17T09:30:47.0Z</LastUpdatedAt>
+			<LastUpdatedBy>smith</LastUpdatedBy>
+		</Image>
+	</Release>
+</SPRITResponse>

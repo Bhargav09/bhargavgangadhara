@@ -1,0 +1,105 @@
+
+<?xml version="1.0" encoding="UTF-8" ?> 
+<SpritRequest version="1.0"> 
+  
+  <ClientName>CCBU</ClientName>
+  
+  <ClientRequestId>007420786</ClientRequestId>
+  
+  <Action>CreateImageInSprit</Action>
+  
+  <SoftwareType>Analog Firmware Loader</SoftwareType>
+  
+  <Image>
+  
+    <ReleaseVersion version="V1.922G">
+    
+    	<ReleaseComponents>
+    
+    		<ReleaseComponent>
+    
+    			<ComponentName>MajorRelease</ComponentName>
+    
+    			<ComponentValue>1</ComponentValue>
+    
+    		</ReleaseComponent>
+    		
+    		<ReleaseComponent>
+				
+				<ComponentName>MinorRelease</ComponentName>
+
+				<ComponentValue>9</ComponentValue>
+		
+			</ReleaseComponent>
+			
+			<ReleaseComponent>
+
+				<ComponentName>MaintenanceRelease</ComponentName>
+
+				<ComponentValue>22</ComponentValue>
+
+			</ReleaseComponent>
+    
+    	</ReleaseComponents>
+    
+    	<ReleaseMessage>      </ReleaseMessage>
+    
+    	<!--ReleaseDocuments>
+    		<ReleaseDocument>
+    			<ReleaseLabel>Label</ReleaseLabel>
+    			<ReleaseURL>http://www.google.com</ReleaseURL>
+    			<ReleaseDocSourceLocation></ReleaseDocSourceLocation>
+    		</ReleaseDocument>
+    	</ReleaseDocuments-->
+    
+    </ReleaseVersion>
+    
+    <ImageName>DummyImage5.tst</ImageName>
+    
+    <ImageDescription>Dummy Image for testing Create Image WebService</ImageDescription>
+    
+    <MDF>
+      <MDFId>277873153</MDFId>
+    </MDF>
+    
+    <MemoryFootPrint>0</MemoryFootPrint>   -
+    
+    <HardDiskFootPrint>1</HardDiskFootPrint>
+    
+    <Crypto>No</Crypto>
+    
+    <ReleaseDocURL></ReleaseDocURL>
+    
+    <PostingTypeName>CCO Only</PostingTypeName>
+    
+    <InstallationDocURL></InstallationDocURL>
+    
+    <ProductCode>12.1</ProductCode>
+    
+    <IsSoftwareAdvisory>N</IsSoftwareAdvisory>
+    
+    <SoftwareAdvisoryDocURL></SoftwareAdvisoryDocURL>
+    
+    <IsDeferred>N</IsDeferred>
+    
+    <DeferralAdvisoryDocURL></DeferralAdvisoryDocURL>
+    
+    <CdcAccessLevelName>Guest Registered</CdcAccessLevelName>
+    
+    <SourceLocation>/auto/swc-sed-xfer-stg/asuman/</SourceLocation>
+    
+    <MachineOsType>
+      
+      <Name>Windows</Name>
+      
+      <Name>Solaris</Name>
+    
+    </MachineOsType>
+    
+    <RelatedSoftware>N</RelatedSoftware>
+    
+    <PublisherUserId>asuman</PublisherUserId>
+  
+  </Image>
+
+</SpritRequest>

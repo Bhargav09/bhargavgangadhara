@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright (c) 2006-2007 by Cisco Systems, Inc. All rights reserved. -->
+
+<CmResponse>
+	<ClientName>SPRIT</ClientName>
+	<ClientRequestId>1</ClientRequestId>
+	<Action>CmCfnPush</Action>
+	<Response>
+		<ResponseCode>201</ResponseCode>
+		<ResponseType>Error</ResponseType>
+		<ResponseDescription>Bad xml format.</ResponseDescription>
+		<ResponseComments>Missing Action element.</ResponseComments>
+		<Timestamp>2001-12-17T09:30:47.0Z</Timestamp>
+	</Response>
+</CmResponse>
