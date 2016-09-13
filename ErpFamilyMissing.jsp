@@ -1,13 +1,4 @@
-<%--.........................................................................
-: DESCRIPTION:
-:     ERP Platform Missing Email
-:
-: AUTHORS:
-: @author Raju (sraju@cisco.com)
-:
-: Copyright (c) 2006-2007, 2013 by Cisco Systems, Inc.
-: All rights reserved.
-:.........................................................................--%>
+
 <%@ page import="com.cisco.eit.sprit.util.*" %>
 <html>
 <body>
