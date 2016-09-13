@@ -1,18 +1,3 @@
--------------------------------------------------------------------
--- Copyright (c) 2006-2010 by cisco Systems, Inc. All rights reserved.
---
--- Funciton: Add a record to webservice_request_type table for
---           'ISSU STATE UPDATE' and 'ISSU STATE REPORT'
---           'for IPcentral Project'
---
--- Created by :   nadialee 
--- Created at:    Sept 2006  
--- LastUpdatedBy : Selvaraj Aran(aselvara)
--- LastUpdatedDate:08/24/2010
--------------------------------------------------------------------
-/*********
-The following stataments are commented as they have been already executted
-
 insert into webservice_request_type
 values ( WEBSERVICE_REQUEST_TYPE_SEQ.nextval, 'ISSU STATE UPDATE', sysdate, 'nadialee', sysdate, 'nadialee', 'CREATED FOR SPRIT_ISSU', 'V');
 
