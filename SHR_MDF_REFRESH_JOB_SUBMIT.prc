@@ -1,7 +1,5 @@
 CREATE OR REPLACE PROCEDURE SHR_MDF_REFRESH_JOB_SUBMIT IS
 
-/* Copyright (c) 2005 by cisco Systems, Inc. All rights reserved. */
-
     jobno NUMBER;
 	
 BEGIN
