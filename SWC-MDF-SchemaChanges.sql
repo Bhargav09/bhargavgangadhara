@@ -1,10 +1,3 @@
-/* Copyright (c) 2006 by cisco Systems, Inc. All rights reserved. */
--- SWC-MDF-SchemaChanges.sql
-
-connect shr_rda/shr_rda@testrda
-
--- ======================= Schema Drop Script ================================
-
 ALTER TABLE SHR_IMAGE
  DROP COLUMN MDF_SWT_CONCEPT_ID;
 
