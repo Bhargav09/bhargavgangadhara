@@ -1,0 +1,8 @@
+/*@ digarg - CSCua51922 Overriding ext-all.css file */
+ 
+/** Copyright (c) 2012 by Cisco Systems, Inc.
+* All rights reserved.
+*/
+
+
+table.x-date-inner{width:100%;table-layout:auto;}

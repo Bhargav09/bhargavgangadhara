@@ -1,0 +1,44 @@
+/*
+ * Author: nadialee
+ * Modification:
+ *   March 2005: No change is made from the original version.
+ *   Copied to work with dtree.css and MdfTree.jsp.
+ *
+ * Copyright (c) 2005 by Cisco Systems, Inc.
+ * All rights reserved.
+ */
+
+/*--------------------------------------------------|
+| dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+|---------------------------------------------------|
+| Geir Landrö                                    |
+|--------------------------------------------------*/
+
+.tree {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+}
+.tree img {
+    border: 0px;
+    vertical-align: middle;
+}
+.tree a {
+    color: #333;
+    text-decoration: none;
+}
+.tree a.node, .tree a.nodeSel {
+    white-space: nowrap;
+    padding: 1px 2px 1px 2px;
+}
+.tree a.node:hover, .tree a.nodeSel:hover {
+    color: #333;
+    text-decoration: underline;
+}
+.tree a.nodeSel {
+    background-color: #c0d2ec;
+}
+.tree .clip {
+    overflow: hidden;
+}
