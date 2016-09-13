@@ -1,33 +1,5 @@
 CREATE OR REPLACE PACKAGE BODY SHR_RDA.SHR_MDF_REFRESH_PKG AS
 
-/* Copyright (c) 2005-2007 by cisco Systems, Inc. All rights reserved. */
-	
-/*
-||======================================================================
-|| File: SHR_MDF_REFRESH_PKG.pkb
-||
-|| Function:
-||   - Refreshes MDF tables from e2e views.
-||   - Refresh frequency is assumed to be 1 or 2 days.
-||     Logic is embedded to picked changes from e2e made during
-||     past 2 days.
-||   - We are NOT deleting/removing any records from our tables,
-||     When a record is deleted from e2e views, we mark adm_falg=D
-||     in SHR_RDA MDF tables.
-|| 
-|| Author: Nadia Lee
-||   Created: March 2005
-||   Modified: July 2007
-||     -- Added rerfresh condition to by-pass the refresh if the source dodens't
-||        meet certain % of srda records. It is currently set to be 90%.
-||
-|| NOTE from Shrindar regarding e2e views:
-||   In the rare event of refresh failure on E2E Reporting DB side of it..
-||   and we(e2e) end up with a state where there the underlying views 
-||   are not available..with no data to view, 
-||   SPRIT should avoid truncating entire table. 
-||======================================================================
-*/
     g_pkg_name                  varchar2(100) := 'SHR_MDF_REFRESH_PKG';
     g_newline                   varchar2(2)   := CHR(13)||CHR(10);
     g_min_percent_to_refresh    number        := 90;
