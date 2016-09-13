@@ -1,43 +1,4 @@
 CREATE OR REPLACE PACKAGE BODY SHR_RDA.SHR_YPUBLISH_LOG_PKG AS
-
-/* Copyright (c) 2005-2008 by cisco Systems, Inc. All rights reserved. */
-
-/*
-||=================================================================
-|| File: SHR_YPUBLISH_LOG_PKG.pkb
-||
-|| Author: Nadia Lee
-|| Created: May 2005
-||
-|| Function:
-||   - This package contains two main_* procedures that yPublish
-||     calls to update the status of 1) sprit-submitted XML file
-||     acceptance, and 2) CCO transaction satus on each image
-||     for the transaction.
-||   - When yPublish calls main_ypub_image_log procedure to update
-||     the CCO transaction status on each image, this procedure
-||     also does the following updates:
-||
-||     1) updates SHR_IMAGE.is_posted_to_cco (for IOS only),
-||     2) cspr_image_posting_status.cco_transaction_status with
-||        'Success' or 'Fail'.
-||     3) When all images CCO transaction status is updated by
-||        yPublish, this procedure updates
-||        CSPR_YPUBLISH_TRANS_LOG.transaction_status with
-||        'Success' or 'Fail', calls java servlet to process the 
-||        very last steps of posting process owned by SPRIT such as
-||        unlocking /release directory, send out README file, send 
-||        transaction status email notification to user.
-||
-|| NOTE:
-|| -  yPublish calls these two main procedures:
-||    1) main_upd_ypublish_xml_log: 
-||          - To update CSPR_YPUBLISH_TRANS_LOG table.
-||    2) main_upd_ypublish_image_log: 
-||          - To updates CSPR_YPUBLISH_IMAGE_LOG, SHR_IMAGE, and
-||            cspr_image_posting_status tables, then calls Java servlet.
-||=================================================================
-*/
     VERBOSE         boolean         := true;
     g_pkg_name      varchar2(100)   := 'SHR_YPUBLISH_LOG_PKG';
     g_newline       varchar2(2)     := CHR(13)||CHR(10);
