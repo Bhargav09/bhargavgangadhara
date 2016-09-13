@@ -1,0 +1,167 @@
+--Copyright (c) 2006 by Cisco Systems, Inc. -kdharmal
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('471', '24', 'CcoCompleted','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('472', '24', 'CcoCompleted','prod', 'cco-ion-post@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('473', '24', 'CcoCompleted','dev', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal'); 
+
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('474', '24', 'CcoPostCompleted','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('475', '24', 'CcoPostCompleted','prod', 'cco-ion-post@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('476', '24', 'CcoPostCompleted','dev', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal'); 
+					 
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('477', '24', 'CcoRemoveCompleted','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('478', '24', 'CcoRemoveCompleted','prod', 'cco-ion-post-issues@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('479', '24', 'CcoRemoveCompleted','dev', 'sprit-notification-test@cisco.com',
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('480', '24', 'CcoFailed','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                 values('481', '24', 'CcoFailed','prod', 'cco-ion-post-issues@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('482', '24', 'CcoFailed','dev', 'sprit-notification-test@cisco.com',
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+
+		       insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('480', '24', 'Readme','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                 values('481', '24', 'Readme','prod', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('482', '24', 'Readme','dev', 'sprit-notification-test@cisco.com',
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+
+	       insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('486', '25', 'CcoCompleted','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('487', '25', 'CcoCompleted','prod', 'cco-ion-post@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('488', '25', 'CcoCompleted','dev', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal'); 
+
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('489', '25', 'CcoPostCompleted','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('490', '25', 'CcoPostCompleted','prod', 'cco-ion-post@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('491', '25', 'CcoPostCompleted','dev', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal'); 
+					 
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('492', '25', 'CcoRemoveCompleted','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('493', '25', 'CcoRemoveCompleted','prod', 'cco-ion-post-issues@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('494', '25', 'CcoRemoveCompleted','dev', 'sprit-notification-test@cisco.com',
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('495', '25', 'CcoFailed','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                 values('496', '25', 'CcoFailed','prod', 'cco-ion-post-issues@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('497', '25', 'CcoFailed','dev', 'sprit-notification-test@cisco.com',
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+
+		       insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS, 
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('498', '25', 'Readme','test', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                 values('499', '25', 'Readme','prod', 'sprit-notification-test@cisco.com', 
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+					   
+insert into sprit_email_alias(SPRIT_EMAIL_ALIAS_ID, OS_TYPE_ID, ACTIVITY_NAME, ENVIRONMENT, EMAIL_ALIAS,
+CREATED_BY, CREATED_DATE, ADM_USERID, ADM_TIMESTAMP, ADM_FLAG, ADM_COMMENT)
+                       values('500', '25', 'Readme','dev', 'sprit-notification-test@cisco.com',
+		       'kdharmal', sysdate, 'kdharmal', sysdate, 'V', 'created by kdharmal');
+
+
+
+
+
+
+
