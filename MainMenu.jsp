@@ -1,15 +1,3 @@
-<!--.........................................................................
-: DESCRIPTION:
-: Main Menu page.  Basic searches, boxes for your releases, and a cute
-: welcome message.  Aw...
-:
-: AUTHORS:
-: @author Vellachi Palaniappan (vpalani@cisco.com)
-:
-: Copyright (c) 2003-2008, 2010, 2013 by Cisco Systems, Inc.
-: All rights reserved.
-:.........................................................................-->
-
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Collection" %>
 <%@ page import="java.util.Collections" %>
