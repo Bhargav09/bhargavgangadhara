@@ -1,12 +1,3 @@
-/*
- *
- * @author vbabumus
- * Added title related changes for dialog box (17/4/2013) - asahay
- */
-
-
-//myDialog.set("dimensions", [400, 200]); // [width, height]
-//myDialog.layout(); // starts the resize
     var dashboard = {
     destroyChildElements:true, // to prevent destroy of descendants automatically.
     updateReleaseFlag:false,
