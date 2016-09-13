@@ -1,8 +1,3 @@
-<!--.........................................................................
-: Copyright (c) 2005-2010,2012 by Cisco Systems, Inc.
-: All rights reserved.
-:.........................................................................-->
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.Connection, com.cisco.eit.sprit.logic.imgGuestPublishSummaryNotify.*" %>
