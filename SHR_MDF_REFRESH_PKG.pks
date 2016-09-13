@@ -1,21 +1,4 @@
-CREATE OR REPLACE PACKAGE SHR_MDF_REFRESH_PKG AS
 
-/* Copyright (c) 2005 by cisco Systems, Inc. All rights reserved. */
-
-/*
-||======================================================================
-|| File: SHR_MDF_REFRESH_PKG.pks
-||
-|| Author: Nadia Lee
-|| Created: March 2005
-||
-|| NOTE from Shrindar regarding e2e views:
-||   In the rare event of refresh failure on E2E Reporting DB side of it..
-||   and we(e2e) end up with a state where there the underlying views 
-||   are not available..with no data to view, 
-||   SPRIT should avoid truncating entire table. 
-||======================================================================
-*/
     TYPE email_addr_tab_type  is TABLE of varchar2(50);
 
     PROCEDURE main;
