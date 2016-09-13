@@ -1,22 +1,4 @@
 CREATE OR REPLACE PACKAGE TEST_YPUBLSIH_LOG_PKG AS
-
-/* Copyright (c) 2005 by cisco Systems, Inc. All rights reserved. */
-
-/*
-||=================================================================
-|| File: TEST_YPUBLSIH_LOG_PKG.pks
-||
-|| Author: Nadia Lee
-|| Created: March 2005
-||
-|| Function:
-||   Used to test SHR_YPUBLISH_LOG_PKB. 
-||
-|| Usage: TEST_YPUBLISH_LOG_PKG.main
-||
-||=================================================================
-*/
-
     PROCEDURE main;
     PROCEDURE do_xml_log_test ( 
             in_test_case            in  varchar2,
