@@ -1,14 +1,3 @@
-<!--.........................................................................
-: DESCRIPTION:
-:     Hidden Post Summary format
-:
-: AUTHORS:
-: @author Raju (sraju@cisco.com)
-: @author sakthi (sannakam@cisco.com)
-:
-: Copyright (c) 2006-2007 by Cisco Systems, Inc.
-: All rights reserved.
-:.........................................................................-->
 <%@ page import="java.io.*, com.cisco.eit.sprit.util.*" %>
 <html>
 <body>
