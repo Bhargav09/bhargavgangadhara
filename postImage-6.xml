@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Test Case: CCO Posting newly created image with or without metadata errors
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1125</ClientRequestId>
+  <Action>CCOPostImage</Action>
+  <Image>
+   <ImageId>395</ImageId>
+   <PublisherUserId>vpalani</PublisherUserId>
+  </Image>
+</SpritRequest>

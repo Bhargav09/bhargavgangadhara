@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!--
+  Test Category: Try to check status of an invalid request.
+  Test Desc: The request-xml contains ClientName and ClientRequestId
+             for which no record exists in the CLIENT_WEBSERVICE_REQUEST
+             table. 
+  Pre-condition(s):
+  - The request-xml has action "RequestStatus";
+  - No record exists in CLIENT_WEBSERVICE_REQUEST table for the give
+    ClientName and ClientRequestId.
+
+  Post-conditions(s):
+  - No record is inserted in any of the following tables:
+        CLIENT_NAME
+        CLIENT_WEBSERVICE_REQUEST
+        WEBSERVICE_REQUEST
+      CSPR_IMAGE
+      CSPR_IMAGE_MACHINE_OS_TYPE
+      CSPR_IMAGE_MDF
+  - The response-xml with error-code 10201  is sent to client.
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>0</ClientRequestId>
+  <Action>RequestStatus</Action>
+</SpritRequest>
+

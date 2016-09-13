@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!--
+  Test Category: Delete an image
+  Test Desc: Try to delete an already deleted image.
+
+  Pre-condition(s):
+  - The <ImageId> refers to a deleted image. 
+  - The request-xml has action "DeleteImageInSprit";
+
+  Post-conditions(s):
+  - A record is inserted in following tables: 
+        CLIENT_NAME
+        CLIENT_WEBSERVICE_REQUEST
+        WEBSERVICE_REQUEST
+  - No record is updated in the following tables:
+      CSPR_IMAGE
+      CSPR_IMAGE_MACHINE_OS_TYPE
+      CSPR_IMAGE_MDF
+  - The response-xml with success code 10901  is sent to client.
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234</ClientRequestId>
+  <Action>DeleteImageInSprit</Action>
+  <Image>
+   <ImageId>393</ImageId>
+   <PublisherUserId>prussel</PublisherUserId>
+  </Image>
+</SpritRequest>
+

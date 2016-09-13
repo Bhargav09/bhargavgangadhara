@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Test Case: CCO Posted image can only be reposted, Repost success can not be reposted.
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>11243</ClientRequestId>
+  <Action>CCORepostImage</Action>
+  <Image>
+   <ImageId>766835</ImageId>
+   <PublisherUserId>holchen</PublisherUserId>
+  </Image>
+  <ReleaseNews><![CDATA[<b>This is a repost</b>]]></ReleaseNews>
+</SpritRequest>

@@ -1,0 +1,127 @@
+
+<?xml version="1.0"?><SpritRequest version="1.0"><ClientName>CCBU</ClientName><ClientRequestId>1236295348</ClientRequestId><Action>EditImageInSprit</Action><SoftwareType>Cisco Unified Intelligent Contact Management Software Releases</SoftwareType><Image><ImageId>1396334</ImageId><ReleaseVersion version="7.5(3)_ES2"><ReleaseComponents><ReleaseComponent><ComponentName>MajorRelease</ComponentName><ComponentValue>ICM Version 7</ComponentValue></ReleaseComponent><ReleaseComponent><ComponentName>MaintenanceRelease</ComponentName><ComponentValue>3</ComponentValue></ReleaseComponent><ReleaseComponent><ComponentName>MinorRelease</ComponentName><ComponentValue>7.5</ComponentValue></ReleaseComponent><ReleaseComponent><ComponentName>ServiceRelease</ComponentName><ComponentValue>0</ComponentValue></ReleaseComponent><ReleaseComponent><ComponentName>FeaturetteRelease</ComponentName><ComponentValue>0</ComponentValue></ReleaseComponent><ReleaseComponent><ComponentName>ESRelease</ComponentName><ComponentValue>2</ComponentValue></ReleaseComponent><ReleaseComponent><ComponentName>BuildRelease</ComponentName><ComponentValue>4</ComponentValue></ReleaseComponent></ReleaseComponents><ReleaseDocuments><ReleaseDocument><ReleaseLabel>test readme</ReleaseLabel><ReleaseDocSourceLocation>/auto/swc-custcontact/icm/7/5/3/0/0/2/test_readme.html</ReleaseDocSourceLocation></ReleaseDocument></ReleaseDocuments></ReleaseVersion><CCOFCSDate>2009-02-04T00:00:00</CCOFCSDate><ImageName>ICM7.5.3_ET2.exe</ImageName><ImageDescription>Installer for ICM7.5.3_ET2.exe</ImageDescription><MDF><MDFId>268439693</MDFId><MDFId>268439689</MDFId><MDFId>268439622</MDFId></MDF><Crypto>NONE</Crypto><PostingTypeName>Hidden Post CCO Only</PostingTypeName><IsSoftwareAdvisory>N</IsSoftwareAdvisory><IsDeferred>N</IsDeferred><CdcAccessLevelName>Contract Registered</CdcAccessLevelName><SourceLocation>/auto/swc-custcontact/icm/7/5/3/0/0/2</SourceLocation><RelatedSoftware>N</RelatedSoftware><ImageDocuments><ImageDocument><ImageLabel>test readme</ImageLabel><ImageDocSourceLocation>/auto/swc-custcontact/icm/7/5/3/0/0/2/test_readme.html</ImageDocSourceLocation></ImageDocument></ImageDocuments><PublisherUserId>tcobb</PublisherUserId></Image></SpritRequest>
+
+
+
+
+
+
+<!--
+<?xml version="1.0" encoding="UTF-8" ?> 
+  Test Category: xml validation againt db.
+  Test Desc: The List object MDF is missing in request-xml.
+             This is one of the required fields for "Cisco Network Assistant" 
+             SoftwareType (per CSPR_SOFTWARE_METADATA table). 
+             The validation code should catch it and fail with appropriate error.
+
+  Pre-condition(s):
+  - Request-xml contains "Cisco Network Assistant" for SoftwareType.
+  - Request-xml doesn't contain MDF tag.
+
+  Post-conditions(s):
+  - A record is inserted in following tables:
+      CLIENT_NAME
+      CLIENT_WEBSERVICE_REQUEST
+      WEBSERVICE_REQUEST
+  - No new record is inserted in any of the following tables:
+      CSPR_IMAGE
+      CSPR_IMAGE_MACHINE_OS_TYPE
+      CSPR_IMAGE_MDF
+  - The response-xml with error-code 10201  is sent to client.
+
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234617579</ClientRequestId>
+  <Action>CreateImageInSprit</Action>
+  <SoftwareType>Cisco Security Agent for Contact Center Products</SoftwareType>
+  <Image>
+   <ReleaseVersion version="12.33">
+   <ReleaseComponents>
+    <ReleaseComponent>
+    	<ComponentName>MajorRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>MinorRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>MaintenanceRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>ServiceRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>FeaturetteRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>ESRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>BuildRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    </ReleaseComponents>
+    <ReleaseMessage><![CDATA[<i>This is a create</i>]]></ReleaseMessage>
+    <ReleaseDocuments>
+      	<ReleaseDocument>
+	    	<ReleaseLabel>ccbu_label_1</ReleaseLabel>
+	    	<ReleaseURL>http://yahoo.com</ReleaseURL>
+	</ReleaseDocument>
+	<ReleaseDocument>
+		<ReleaseLabel>ccbu_label_2</ReleaseLabel>
+		<ReleaseURL>http://yahoo.com</ReleaseURL>
+	</ReleaseDocument>
+	<ReleaseDocument>
+	          <ReleaseLabel>ccbu_label_3</ReleaseLabel>
+	          <ReleaseDocSourceLocation>/tmp/holchen/hollydoc1</ReleaseDocSourceLocation>
+	</ReleaseDocument>
+  </ReleaseDocuments>
+  </ReleaseVersion>
+    <CCOFCSDate>2006-10-23T16:12:39.005</CCOFCSDate>
+    <ImageName>j2re-1_4_2_10-windows-i586-p.exe</ImageName>
+    <ImageDescription>This is a test for case3 </ImageDescription>
+    <MDF>
+      <MDFId>268438521</MDFId>
+     </MDF>
+    <MemoryFootPrint>0</MemoryFootPrint>
+    <HardDiskFootPrint>1 </HardDiskFootPrint>
+    <Crypto>Kx</Crypto>
+    <ReleaseDocURL></ReleaseDocURL>
+    <PostingTypeName>CCO Only</PostingTypeName>
+    <InstallationDocURL></InstallationDocURL>
+    <ProductCode>24.0 </ProductCode>
+    <IsSoftwareAdvisory>N</IsSoftwareAdvisory>
+    <SoftwareAdvisoryDocURL>www.cisco.com</SoftwareAdvisoryDocURL>
+    <IsDeferred>N</IsDeferred>
+    <DeferralAdvisoryDocURL></DeferralAdvisoryDocURL>
+    <CdcAccessLevelName>Guest Registered</CdcAccessLevelName>
+    <SourceLocation>/auto/swc-custcontact/cisco/custcontact/CTIOS/7.0/sr2/</SourceLocation>
+    <MachineOsType>
+      <Name>Windows</Name>
+      <Name>Solaris</Name>
+    </MachineOsType>
+    <RelatedSoftware>N</RelatedSoftware>
+     <ImageDocuments>
+         	<ImageDocument>
+             		<ImageLabel>image_label_2</ImageLabel>
+             		<ImageURL>http://yahoosss.com</ImageURL>
+            	</ImageDocument>
+            	<ImageDocument>
+     	        		<ImageLabel>image_label_3</ImageLabel>
+     	        		<ImageURL>http://yahoo.com</ImageURL>
+            	</ImageDocument>
+            	<ImageDocument>
+     	        		<ImageLabel>image_label_4</ImageLabel>
+     	        		<ImageDocSourceLocation>/tmp/holchen/hollydoc.html</ImageDocSourceLocation>
+            	</ImageDocument>
+  </ImageDocuments>
+   
+    <PublisherUserId>holchen</PublisherUserId>
+  </Image>
+</SpritRequest>
+-->

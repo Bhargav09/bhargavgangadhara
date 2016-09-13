@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>11237</ClientRequestId>
+  <Action>ccoPostImage</Action>
+  <Image>
+   <ImageId>649833</ImageId>
+   <PublisherUserId>vpalani</PublisherUserId>
+  </Image>
+</SpritRequest>
