@@ -1,4 +1,3 @@
---Copyright (c) 2004 by Cisco Systems, Inc.
 CREATE OR REPLACE VIEW IMAGE ( IMAGE, 
 RELEASE, MAINTENANCE, MRENUMBER, ED_DESIGNATOR, 
 ED_RENUMBER, OBSOLETE ) AS SELECT DISTINCT i.image_name, m.major_release_number, r.z, r.p, r.a, r.o,
