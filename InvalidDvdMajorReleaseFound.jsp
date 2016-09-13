@@ -1,10 +1,3 @@
-<!--.........................................................................
-// Copyright (c) 2008 by Cisco Systems, Inc.
-.........................................................................--!>
-
-<%@ page import="java.io.*" %>
-<%@ page import="com.cisco.eit.sprit.util.*" %>
-
 <style type="text/css">
 table.tlook {
     border-width: 1px 1px 1px 1px;
