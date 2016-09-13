@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Test Case: Successfully posted, will be removed.
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>118</ClientRequestId>
+  <Action>CCORemoveImage</Action>
+  <Image>
+   <ImageId>649834</ImageId>
+   <PublisherUserId>vpalani</PublisherUserId>
+  </Image>
+</SpritRequest>

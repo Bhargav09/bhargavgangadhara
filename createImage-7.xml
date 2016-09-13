@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!--
+  Test Category: xml validation againt schema.
+  Test Desc: The mdfId in request-xml has null value.
+
+  Pre-condition(s):
+  - Request-xml contains null value for one of the MdfId's.
+
+  Post-conditions(s):
+  - No new record is inserted in any of the following tables:
+      CLIENT_NAME
+      CLIENT_WEBSERVICE_REQUEST
+      CSPR_IMAGE
+      CSPR_IMAGE_MACHINE_OS_TYPE
+      CSPR_IMAGE_MDF
+  - The response-xml with error-code 10200  is sent to client.
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234</ClientRequestId>
+  <Action>CreateImageInSprit</Action>
+  <SoftwareType>Cisco Network Assistant</SoftwareType>
+  <Image>
+    <Release>
+      <ReleaseNumber>1.0(1a)</ReleaseNumber>
+      <MajorRelease> 1</MajorRelease>
+      <MaintenanceRelease>1a</MaintenanceRelease>
+      <MinorRelease>0</MinorRelease>
+    </Release>
+    <ImageName>susingh-test-1</ImageName>
+    <ImageDescription></ImageDescription>
+    <MDF>
+      <MDFId></MDFId>
+      <MDFId>22222</MDFId>
+      <MDFId>37521123 </MDFId>
+    </MDF>
+    <MemoryFootPrint>0</MemoryFootPrint>
+    <HardDiskFootPrint>1 </HardDiskFootPrint>
+    <crypto>No</crypto>
+    <ReleaseDocURL></ReleaseDocURL>
+    <PostingTypeName>CCO Only</PostingTypeName>
+    <InstallationDocURL></InstallationDocURL>
+    <ProductCode>12.1 </ProductCode>
+    <IsSoftwareAdvisory>N</IsSoftwareAdvisory>
+    <SoftwareAdvisoryDocURL> www.cisco.com </SoftwareAdvisoryDocURL>
+    <IsDeferred>N</IsDeferred>
+    <DeferralAdvisoryDocURL></DeferralAdvisoryDocURL>
+    <CdcAccessLevelName></CdcAccessLevelName>
+    <SourceLocation>/auto/swc-lan/crypto/3DES/cna/archive/</SourceLocation>
+    <MachineOsType>
+      <Name>Windows</Name>
+      <Name>unknown</Name>
+      <Name>Solaris</Name>
+    </MachineOsType>
+    <RelatedSoftware>N</RelatedSoftware>
+    <PublisherUserId>prussel</PublisherUserId>
+  </Image>
+</SpritRequest>

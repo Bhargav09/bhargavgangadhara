@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<SpritRequest version="1.0">
+<ClientName>CCBU</ClientName>
+<ClientRequestId>129565136</ClientRequestId>
+<Action>EditImageInSprit</Action>
+<SoftwareType>Server Fabric Switches (SFS) Firmware</SoftwareType>
+<Image>
+  <ImageId>973835</ImageId>
+  <ReleaseVersion version="3.4.0.11.3">
+  	<ReleaseComponents>
+    <ReleaseComponent>
+    	<ComponentName>MajorRelease</ComponentName>
+    	<ComponentValue>8</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>MinorRelease</ComponentName>
+    	<ComponentValue>9</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>MaintenanceRelease</ComponentName>
+    	<ComponentValue>9</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>ServiceRelease</ComponentName>
+    	<ComponentValue>6</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>FeaturetteRelease</ComponentName>
+    	<ComponentValue>6</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>ESRelease</ComponentName>
+    	<ComponentValue>6</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>BuildRelease</ComponentName>
+    	<ComponentValue>8</ComponentValue>
+    </ReleaseComponent>
+  	</ReleaseComponents>
+  </ReleaseVersion>
+  <CCOFCSDate>2011-01-04T16:12:39.00591</CCOFCSDate>
+  <ImageName>SFS-7012D_7024D-3.4.0.11.3.iso</ImageName>
+  <ImageDescription>Cisco SFS 7012D/7024D Chassis Images (CD Image)</ImageDescription>
+  <MDF>
+      <MDFId>280661802</MDFId>
+      <MDFId>280336429</MDFId>
+      <MDFId>280661804</MDFId>
+      <MDFId>280336447</MDFId>
+  </MDF>
+  <MemoryFootPrint>0</MemoryFootPrint>
+  <HardDiskFootPrint>0 </HardDiskFootPrint>
+  <Crypto>No</Crypto>
+  <PostingTypeName>CCO Only</PostingTypeName>
+  <IsSoftwareAdvisory>Y</IsSoftwareAdvisory>
+  <SoftwareAdvisoryDocURL>www.yahoo.com</SoftwareAdvisoryDocURL>
+  <IsDeferred>N</IsDeferred>
+  <CdcAccessLevelName>Contract Registered</CdcAccessLevelName>
+  <SourceLocation>/auto/swc-snv/cisco/crypto/3DES/snv/SFS/7000</SourceLocation>
+  <RelatedSoftware>N</RelatedSoftware>
+  <PublisherUserId>spathala</PublisherUserId>
+ </Image>
+ </SpritRequest>

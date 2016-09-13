@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Test Case: Image Id did not exist in SPRIT
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>11236</ClientRequestId>
+  <Action>CCORepostImage</Action>
+  <Image>
+   <ImageId>0</ImageId>
+   <PublisherUserId>vpalani</PublisherUserId>
+  </Image>
+</SpritRequest>

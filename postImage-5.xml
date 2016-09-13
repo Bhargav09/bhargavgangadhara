@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Test Case: CCO Posted images can not be posted again.
+  This image status is Repost success
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>11234</ClientRequestId>
+  <Action>CCOPostImage</Action>
+  <Image>
+   <ImageId>649770</ImageId>
+   <PublisherUserId>vpalani</PublisherUserId>
+  </Image>
+</SpritRequest>

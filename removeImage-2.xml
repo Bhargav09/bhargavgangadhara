@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Test Case: Successfully Reposted, will be removed.
+  While inprogress, submit again to test the inprogress, and it will not get submitted. 
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1118</ClientRequestId>
+  <Action>CCORemoveImage</Action>
+  <Image>
+   <ImageId>649878</ImageId>
+   <PublisherUserId>vpalani</PublisherUserId>
+  </Image>
+</SpritRequest>

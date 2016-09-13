@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!--
+  Test Category: Validate source location.
+  Test Desc: Validate the soure location path in the request-xml really exists.
+
+  Pre-condition(s):
+  - The request-xml contains non-null value for SourceLocation.
+
+  Post-conditions(s):
+  - A record is inserted in following tables:
+      CLIENT_NAME
+      CLIENT_WEBSERVICE_REQUEST
+      WEBSERVICE_REQUEST
+  - No new record is inserted in any of the following tables:
+      CSPR_IMAGE
+      CSPR_IMAGE_MACHINE_OS_TYPE
+      CSPR_IMAGE_MDF
+  - The response-xml with error-code 10500  is sent to client.
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234</ClientRequestId>
+  <Action>CreateImageInSprit</Action>
+  <SoftwareType>Cisco Network Assistant</SoftwareType>
+  <Image>
+    <Release>
+      <ReleaseNumber>1.0(1a)</ReleaseNumber>
+      <MajorRelease> 1</MajorRelease>
+      <MaintenanceRelease>1a</MaintenanceRelease>
+      <MinorRelease>0</MinorRelease>
+    </Release>
+    <ImageName>susingh-test-1</ImageName>
+    <ImageDescription>This is a test</ImageDescription>
+    <MDF>
+      <MDFId>268438521</MDFId>
+      <MDFId>268438522</MDFId>
+    </MDF>
+    <MemoryFootPrint>0</MemoryFootPrint>
+    <HardDiskFootPrint>1 </HardDiskFootPrint>
+    <Crypto>No</Crypto>
+    <ReleaseDocURL></ReleaseDocURL>
+    <PostingTypeName>CCO Only</PostingTypeName>
+    <InstallationDocURL></InstallationDocURL>
+    <ProductCode>12.1 </ProductCode>
+    <IsSoftwareAdvisory>N</IsSoftwareAdvisory>
+    <SoftwareAdvisoryDocURL>www.cisco.com</SoftwareAdvisoryDocURL>
+    <IsDeferred>N</IsDeferred>
+    <DeferralAdvisoryDocURL></DeferralAdvisoryDocURL>
+    <CdcAccessLevelName>Guest Registered</CdcAccessLevelName>
+    <SourceLocation>/auto/swc-lan/crypto/3DES/cna/xxx/</SourceLocation>
+    <MachineOsType>
+      <Name>Windows</Name>
+      <Name>Solaris</Name>
+    </MachineOsType>
+    <RelatedSoftware>N</RelatedSoftware>
+    <PublisherUserId>prussel</PublisherUserId>
+  </Image>
+</SpritRequest>

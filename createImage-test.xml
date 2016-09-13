@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!--
+  Test Category: xml validation againt db.
+  Test Desc: The List object MDF is missing in request-xml.
+             This is one of the required fields for "Cisco Network Assistant" 
+             SoftwareType (per CSPR_SOFTWARE_METADATA table). 
+             The validation code should catch it and fail with appropriate error.
+
+  Pre-condition(s):
+  - Request-xml contains "Cisco Network Assistant" for SoftwareType.
+  - Request-xml doesn't contain MDF tag.
+
+  Post-conditions(s):
+  - A record is inserted in following tables:
+      CLIENT_NAME
+      CLIENT_WEBSERVICE_REQUEST
+      WEBSERVICE_REQUEST
+  - No new record is inserted in any of the following tables:
+      CSPR_IMAGE
+      CSPR_IMAGE_MACHINE_OS_TYPE
+      CSPR_IMAGE_MDF
+  - The response-xml with error-code 10201  is sent to client.
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234617465</ClientRequestId>
+  <Action>CreateImageInSprit</Action>
+  <SoftwareType>Cisco Security Agent for Contact Center Products</SoftwareType>
+  <Image>
+   <ReleaseVersion version="1.0(1a)_17_2">
+    <ReleaseComponent>
+    	<ComponentName>MajorRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>MinorRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>MaintenanceRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>ServiceRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>FeaturetteRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>ESRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+    <ReleaseComponent>
+    	<ComponentName>BuildRelease</ComponentName>
+    	<ComponentValue>61</ComponentValue>
+    </ReleaseComponent>
+  </ReleaseVersion>
+    <CCOFCSDate>2006-10-23T16:12:39.005</CCOFCSDate>
+    <ImageName>j2re-1_4_2_10-windows-i586-p.exe</ImageName>
+    <ImageDescription>This is a test for case3 </ImageDescription>
+    <MDF>
+      <MDFId>268438521</MDFId>
+     </MDF>
+    <MemoryFootPrint>0</MemoryFootPrint>
+    <HardDiskFootPrint>1 </HardDiskFootPrint>
+    <Crypto>No</Crypto>
+    <ReleaseDocURL></ReleaseDocURL>
+    <PostingTypeName>CCO and MFG</PostingTypeName>
+    <InstallationDocURL></InstallationDocURL>
+    <ProductCode>24.0 </ProductCode>
+    <IsSoftwareAdvisory>N</IsSoftwareAdvisory>
+    <SoftwareAdvisoryDocURL>www.cisco.com</SoftwareAdvisoryDocURL>
+    <IsDeferred>N</IsDeferred>
+    <DeferralAdvisoryDocURL></DeferralAdvisoryDocURL>
+    <CdcAccessLevelName>Guest Registered</CdcAccessLevelName>
+    <SourceLocation>/auto/swc-custcontact/cisco/custcontact/CTIOS/7.0/sr2/</SourceLocation>
+    <MachineOsType>
+      <Name>Windows</Name>
+      <Name>Solaris</Name>
+    </MachineOsType>
+    <RelatedSoftware>N</RelatedSoftware>
+    <PublisherUserId>holchen</PublisherUserId>
+  </Image>
+</SpritRequest>

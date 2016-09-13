@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!--
+  Test Category: Duplicate request
+  Test Desc: The request received is a duplicate request. Another
+             request with same ClientName and ClientRequestId was
+             submitted earlier and is logged in the system.
+  Pre-condition(s):
+  - The request-xml contains ClientName and ClientRequestId for 
+    which a record already exists in CLIENT_WEBSERVICE_REQUEST table.
+
+  Post-conditions(s):
+  - No record is inserted in any of the following tables:
+        CLIENT_NAME
+        CLIENT_WEBSERVICE_REQUEST
+        WEBSERVICE_REQUEST
+        CSPR_IMAGE
+        CSPR_IMAGE_MACHINE_OS_TYPE
+        CSPR_IMAGE_MDF
+  - The response-xml with error-code 10300 is sent to client.
+-->
+<SpritRequest version="1.0">
+  <ClientName>CCBU</ClientName>
+  <ClientRequestId>1234</ClientRequestId>
+  <Action>CreateImageInSprit</Action>
+  <SoftwareType>Cisco Network Assistant</SoftwareType>
+  <Image>
+    <Release>
+      <ReleaseNumber>1.0(1a)</ReleaseNumber>
+      <MajorRelease> 1</MajorRelease>
+      <MaintenanceRelease>1a</MaintenanceRelease>
+      <MinorRelease>0</MinorRelease>
+    </Release>
+    <ImageName>susingh-test-4a</ImageName>
+    <ImageDescription>This is a test</ImageDescription>
+    <MDF>
+      <MDFId>268438521</MDFId>
+      <MDFId>268438522</MDFId>
+    </MDF>
+    <MemoryFootPrint>0</MemoryFootPrint>
+    <HardDiskFootPrint>1 </HardDiskFootPrint>
+    <Crypto>No</Crypto>
+    <ReleaseDocURL></ReleaseDocURL>
+    <PostingTypeName>CCO Only</PostingTypeName>
+    <InstallationDocURL></InstallationDocURL>
+    <ProductCode>12.1 </ProductCode>
+    <IsSoftwareAdvisory>N</IsSoftwareAdvisory>
+    <SoftwareAdvisoryDocURL>www.cisco.com</SoftwareAdvisoryDocURL>
+    <IsDeferred>N</IsDeferred>
+    <DeferralAdvisoryDocURL></DeferralAdvisoryDocURL>
+    <CdcAccessLevelName>Guest Registered</CdcAccessLevelName>
+    <SourceLocation>/auto/swc-lan/crypto/3DES/cna/archive/</SourceLocation>
+    <MachineOsType>
+      <Name>Windows</Name>
+      <Name>Solaris</Name>
+    </MachineOsType>
+    <RelatedSoftware>N</RelatedSoftware>
+    <PublisherUserId>prussel</PublisherUserId>
+  </Image>
+</SpritRequest>
